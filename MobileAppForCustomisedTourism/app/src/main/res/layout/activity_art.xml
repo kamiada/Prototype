@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE2BB"
+    tools:context=".Art">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/scottishnationalgalleryofmodernart"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/modernart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.161" />
+
+            <Button
+                android:id="@+id/talbotricegallery"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/talbotricegallery"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/writersmuseum"
+                app:layout_constraintVertical_bias="0.164" />
+
+            <Button
+                android:id="@+id/scottishnationalgallery"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/nationalgallery"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/talbotricegallery"
+                app:layout_constraintVertical_bias="0.164" />
+
+            <Button
+                android:id="@+id/portraitgallery"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/makarscourt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/portraitgallery"
+                app:layout_constraintVertical_bias="0.164" />
+
+            <Button
+                android:id="@+id/cityartcentre"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/cityartcentre"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/portraitgallery"
+                app:layout_constraintVertical_bias="0.164" />
+
+            <Button
+                android:id="@+id/stills"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/stills"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cityartcentre"
+                app:layout_constraintVertical_bias="0.164" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

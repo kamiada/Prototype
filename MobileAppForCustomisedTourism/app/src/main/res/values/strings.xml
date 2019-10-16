@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MobileAppForCustomisedTourism</string>
+    <string name="Password">Password</string>
+    <string name="Email">Email</string>
+    <string name="EdinburghSignScreen">Edinburgh\'</string>
+    <string name="Science">Science</string>
+    <string name="Literature">Literature</string>
+    <string name="Art">Art</string>
+    <string name="HistoryAndCultureOfTheCity">History and Culture</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE2BB"
+    tools:context=".Literature">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/writersmuseum"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/writersmuseum"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.161" />
+
+            <Button
+                android:id="@+id/makarscourt"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/makarscourt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/writersmuseum"
+                app:layout_constraintVertical_bias="0.164" />
+
+            <Button
+                android:id="@+id/nationallibrary"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/nationalibraryofscotland"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/makarscourt"
+                app:layout_constraintVertical_bias="0.164" />
+
+            <Button
+                android:id="@+id/scottishstorytelling"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/scottishstorytellingcentre"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nationallibrary"
+                app:layout_constraintVertical_bias="0.164" />
+
+            <Button
+                android:id="@+id/elephanthouse"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/elephanthouse"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scottishstorytelling"
+                app:layout_constraintVertical_bias="0.164" />
+
+            <Button
+                android:id="@+id/armchairbooks"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/armchair"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/elephanthouse"
+                app:layout_constraintVertical_bias="0.164" />
+
+            <Button
+                android:id="@+id/scottmonument"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/scottmonument"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/armchairbooks"
+                app:layout_constraintVertical_bias="0.164" />
+
+            <Button
+                android:id="@+id/scottishpoetrylib"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/scottishpoetrylibrary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scottmonument"
+                app:layout_constraintVertical_bias="0.164" />
+
+            <Button
+                android:id="@+id/oxfordbar"
+                android:layout_width="265dp"
+                android:layout_height="178dp"
+                android:background="@drawable/oxfordpub"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scottishpoetrylib"
+                app:layout_constraintVertical_bias="0.164" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

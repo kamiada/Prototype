@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE2BB"
+    tools:context=".Sign_In">
+
+    <EditText
+        android:id="@+id/email_tologin"
+        android:layout_width="353dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/Email"
+        android:inputType="textWebEmailAddress|text|textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="353dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_tologin"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:background="@drawable/login"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_reg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:background="@drawable/register"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="495dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="616dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/EdinburghSignScreen"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
