@@ -172,7 +172,227 @@ public class Propositions extends AppCompatActivity
 
         if(consistHistoryAndCulture)
         {
+            Button Mound = new Button (this);
+            Mound.setBackgroundResource(R.drawable.themound);
+            layout.addView(Mound);
+            Mound.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", theMound);
+                    startActivity(intent);
+                }
+            });
 
+            final Button Gladstone = new Button (this);
+            Gladstone.setBackgroundResource(R.drawable.gladsoneland);
+            Gladstone.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Gladstone);
+            Gladstone.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", GladsoneLand);
+                    startActivity(intent);
+                }
+            });
+
+            final Button War = new Button (this);
+            War.setBackgroundResource(R.drawable.nationalwarmuseum);
+            War.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(War);
+            War.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", NationalWarMuseum);
+                    startActivity(intent);
+                }
+            });
+
+            final Button MuseumChildhood = new Button (this);
+            MuseumChildhood.setBackgroundResource(R.drawable.museumofchildhood);
+            MuseumChildhood.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(MuseumChildhood);
+            MuseumChildhood.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", MuseumOfChildhood);
+                    startActivity(intent);
+                }
+            });
+
+            final Button JohnKnoxHouse = new Button (this);
+            JohnKnoxHouse.setBackgroundResource(R.drawable.johnknoxhouse);
+            JohnKnoxHouse.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(JohnKnoxHouse);
+            JohnKnoxHouse.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", JohnKnox);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Whisky = new Button (this);
+            Whisky.setBackgroundResource(R.drawable.whisky);
+            Whisky.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Whisky);
+            Whisky.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", ScotchWhiskyExperience);
+                    startActivity(intent);
+                }
+            });
+
+            final Button PeoplesMuseum = new Button (this);
+            PeoplesMuseum.setBackgroundResource(R.drawable.peoplesstorymuseum);
+            PeoplesMuseum.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(PeoplesMuseum);
+            PeoplesMuseum.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", ThePeopleStoryMuseum);
+                    startActivity(intent);
+                }
+            });
+
+            final Button EdiMuseum = new Button (this);
+            EdiMuseum.setBackgroundResource(R.drawable.museumofedinburgh);
+            EdiMuseum.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(EdiMuseum);
+            EdiMuseum.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", MuseumOfEdinburgh);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Georgian = new Button (this);
+            Georgian.setBackgroundResource(R.drawable.georgianhouse);
+            Georgian.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Georgian);
+            Georgian.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", GeorgianHouse);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Palace = new Button (this);
+            Palace.setBackgroundResource(R.drawable.palaceofholyroodhouse);
+            Palace.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Palace);
+            Palace.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", PalaceofHolyroodhouse);
+                    startActivity(intent);
+                }
+            });
+
+            final Button LivingMemory = new Button (this);
+            LivingMemory.setBackgroundResource(R.drawable.livingmemoryassosciation);
+            LivingMemory.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(LivingMemory);
+            LivingMemory.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", LivingMemoryA);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Heart = new Button (this);
+            Heart.setBackgroundResource(R.drawable.heartofmidlothian);
+            Heart.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Heart);
+            Heart.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", HeartMuseum);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Yacht = new Button (this);
+            Yacht.setBackgroundResource(R.drawable.yachtbritannica);
+            Yacht.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Yacht);
+            Yacht.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", RoyalYacht);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Greyviard = new Button (this);
+            Greyviard.setBackgroundResource(R.drawable.greyfriarskirkyard);
+            Greyviard.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Greyviard);
+            Greyviard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", Greyfriars);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Lauriston = new Button (this);
+            Lauriston.setBackgroundResource(R.drawable.lauristoncastle);
+            Lauriston.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Lauriston);
+            Lauriston.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", LauristonCastle);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Mining = new Button (this);
+            Mining.setBackgroundResource(R.drawable.nationalminingmuseum);
+            Mining.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Mining);
+            Mining.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", NationalMiningMuseum);
+                    startActivity(intent);
+                }
+            });
         }
 
         if(consistLiterature)
