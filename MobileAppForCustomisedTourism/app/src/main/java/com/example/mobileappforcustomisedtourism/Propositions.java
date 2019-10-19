@@ -4,7 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
+
 
 public class Propositions extends AppCompatActivity
 {
@@ -14,6 +20,10 @@ public class Propositions extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_propositions);
+
+
+
+
 
         LinearLayout layout = (LinearLayout)findViewById(R.id.LinearLayout);
         Intent intentResult = this.getIntent();
@@ -73,6 +83,148 @@ public class Propositions extends AppCompatActivity
         final String RoyalBotanicGarden = "55.9594, -3.2040";
 
 
-        
+        if(consistArt)
+        {
+
+        }
+
+
+        if(consistHistoryAndCulture)
+        {
+
+        }
+
+        if(consistLiterature)
+        {
+
+        }
+
+        if(consistScience)
+        {
+            Button AnatomicMuseum = new Button (this);
+            AnatomicMuseum.setBackgroundResource(R.drawable.anatomicalmuseum);
+            layout.addView(AnatomicMuseum);
+            AnatomicMuseum.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", AnatomicalMuseum);
+                    startActivity(intent);
+                }
+            });
+
+            final Button SurgeonHalls1 = new Button (this);
+            SurgeonHalls1.setBackgroundResource(R.drawable.surgeonhalls);
+            SurgeonHalls1.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(SurgeonHalls1);
+            SurgeonHalls1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", SurgeonHalls);
+                    startActivity(intent);
+                }
+            });
+
+            final Button NationalMuseumOfScotland1 = new Button (this);
+            NationalMuseumOfScotland1.setBackgroundResource(R.drawable.nationalmuseum);
+            NationalMuseumOfScotland1.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(NationalMuseumOfScotland1);
+            NationalMuseumOfScotland1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", NationalMuseumOfScotland);
+                    startActivity(intent);
+                }
+            });
+
+            final Button CameraObscura1 = new Button (this);
+            CameraObscura1.setBackgroundResource(R.drawable.illusioncameraobscura);
+            CameraObscura1.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(CameraObscura1);
+            CameraObscura1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", CameraObscura);
+                    startActivity(intent);
+                }
+            });
+
+            final Button CObservatory = new Button (this);
+            CObservatory.setBackgroundResource(R.drawable.cityobservatory);
+            CObservatory.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(CObservatory);
+            CObservatory.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", CityObservatory);
+                    startActivity(intent);
+                }
+            });
+
+            final Button DynamicEarth1 = new Button (this);
+            DynamicEarth1.setBackgroundResource(R.drawable.dynamicearth);
+            DynamicEarth1.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(DynamicEarth1);
+            DynamicEarth1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", DynamicEarth);
+                    startActivity(intent);
+                }
+            });
+
+            final Button RObservatory = new Button (this);
+            RObservatory.setBackgroundResource(R.drawable.royalobservatory);
+            RObservatory.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(RObservatory);
+            RObservatory.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", RoyalObservatory);
+                    startActivity(intent);
+                }
+            });
+
+            final Button NMonument = new Button (this);
+            NMonument.setBackgroundResource(R.drawable.nelsonmonument);
+            NMonument.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(NMonument);
+            NMonument.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", NelsonMonument);
+                    startActivity(intent);
+                }
+            });
+
+            final Button RBGardens = new Button (this);
+            RBGardens.setBackgroundResource(R.drawable.royalbotanicalgarden);
+            RBGardens.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(RBGardens);
+            RBGardens.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", RoyalBotanicGarden);
+                    startActivity(intent);
+                }
+            });
+
+        }
     }
 }
