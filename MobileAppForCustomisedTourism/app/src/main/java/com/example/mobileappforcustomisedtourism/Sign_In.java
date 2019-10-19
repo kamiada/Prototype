@@ -31,7 +31,7 @@ public class Sign_In extends AppCompatActivity {
 
         // Automatic login
         if(mAuth.getCurrentUser() != null) {
-            Intent intent = new Intent(Sign_In.this, Questionnaire.class);
+            Intent intent = new Intent(Sign_In.this, HomeScreen.class);
             startActivity(intent);
             finish();
         }

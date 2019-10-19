@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE2BB"
+    tools:context=".HomeScreen">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="495dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="616dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="495dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/oragne_view" />
+
+    <Button
+        android:id="@+id/Continue"
+        android:layout_width="238dp"
+        android:layout_height="59dp"
+        android:background="@drawable/start_discovering_btn"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Profile"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <Button
+        android:id="@+id/CheckIn"
+        android:layout_width="238dp"
+        android:layout_height="59dp"
+        android:background="@drawable/checkin"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Continue"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <Button
+        android:id="@+id/SignOut"
+        android:layout_width="238dp"
+        android:layout_height="59dp"
+        android:background="@drawable/sign_out_btn"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CheckIn"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <Button
+        android:id="@+id/Profile"
+        android:layout_width="238dp"
+        android:layout_height="59dp"
+        android:background="@drawable/your_profile_btn"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+</androidx.constraintlayout.widget.ConstraintLayout>
