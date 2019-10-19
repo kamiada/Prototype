@@ -85,7 +85,88 @@ public class Propositions extends AppCompatActivity
 
         if(consistArt)
         {
+            Button MA = new Button (this);
+            MA.setBackgroundResource(R.drawable.modernart);
+            layout.addView(MA);
+            MA.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", ScottishNationalGalleryMA);
+                    startActivity(intent);
+                }
+            });
 
+            final Button TalbotR = new Button (this);
+            TalbotR.setBackgroundResource(R.drawable.talbotricegallery);
+            TalbotR.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(TalbotR);
+            TalbotR.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", TalbotRiceGallery);
+                    startActivity(intent);
+                }
+            });
+
+            final Button SNGallery = new Button (this);
+            SNGallery.setBackgroundResource(R.drawable.nationalgallery);
+            SNGallery.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(SNGallery);
+            SNGallery.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", ScottishNationalGallery);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Portrait = new Button (this);
+            Portrait.setBackgroundResource(R.drawable.portraitgallery);
+            Portrait.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Portrait);
+            Portrait.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", PortraitGallery);
+                    startActivity(intent);
+                }
+            });
+
+
+            final Button CityArt = new Button (this);
+            CityArt.setBackgroundResource(R.drawable.cityartcentre);
+            CityArt.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(CityArt);
+            CityArt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", CityArtCentre);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Stills = new Button (this);
+            Stills.setBackgroundResource(R.drawable.stills);
+            Stills.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Stills);
+            Stills.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", StillsGallery);
+                    startActivity(intent);
+                }
+            });
         }
 
 
@@ -96,7 +177,129 @@ public class Propositions extends AppCompatActivity
 
         if(consistLiterature)
         {
+            Button Writers = new Button (this);
+            Writers.setBackgroundResource(R.drawable.writersmuseum);
+            layout.addView(Writers);
+            Writers.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", WritersMuseum);
+                    startActivity(intent);
+                }
+            });
 
+            final Button Makars = new Button (this);
+            Makars.setBackgroundResource(R.drawable.makarscourt);
+            Makars.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Makars);
+            Makars.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", MakarsCourt);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Library = new Button (this);
+            Library.setBackgroundResource(R.drawable.nationalibraryofscotland);
+            Library.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Library);
+            Library.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", NationalLibrary);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Storytelling = new Button (this);
+            Storytelling.setBackgroundResource(R.drawable.scottishstorytellingcentre);
+            Storytelling.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Storytelling);
+            Storytelling.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", ScottishStorytellingCentre);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Elephant = new Button (this);
+            Elephant.setBackgroundResource(R.drawable.elephanthouse);
+            Elephant.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Elephant);
+            Elephant.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", ElephantHouse);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Armchair = new Button (this);
+            Armchair.setBackgroundResource(R.drawable.armchair);
+            Armchair.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Armchair);
+            Armchair.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", ArmchairBooks);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Scott = new Button (this);
+            Scott.setBackgroundResource(R.drawable.scottmonument);
+            Scott.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Scott);
+            Scott.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", ScottMonument);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Poetry = new Button (this);
+            Poetry.setBackgroundResource(R.drawable.scottishpoetrylibrary);
+            Poetry.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Poetry);
+            Poetry.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", ScottishPoetryLib);
+                    startActivity(intent);
+                }
+            });
+
+            final Button Oxford = new Button (this);
+            Oxford.setBackgroundResource(R.drawable.oxfordpub);
+            Oxford.setLayoutParams(new LinearLayout.LayoutParams
+                    (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+            layout.addView(Oxford);
+            Oxford.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = (new Intent(Propositions.this, MapsActivity.class));
+                    intent.putExtra("Picked Location", OxfordBar);
+                    startActivity(intent);
+                }
+            });
         }
 
         if(consistScience)
