@@ -26,6 +26,9 @@ public class UserProfile extends AppCompatActivity {
     private  String userID;
     private String email;
     private static final String TAG = "ViewDatabase";
+    Button achievementBotanical;
+    Button achievementArt;
+    Button achievementCastle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,16 +58,28 @@ public class UserProfile extends AppCompatActivity {
             TextView showEmail = (TextView)findViewById(R.id.userEmail);
             showEmail.setText(email);
 
-            Button achievement1 = (Button)findViewById(R.id.achievement1);
-            achievement1.setOnClickListener(new View.OnClickListener()
-            {
-                @Override
-                public void onClick(View view)
-                {
+        //show achievements basing on Check_In in testing
+        achievementBotanical = (Button)findViewById(R.id.achievement1);
+        achievementArt = (Button)findViewById(R.id.achievement2);
+        achievementCastle = (Button)findViewById(R.id.achievement3);
 
-                }
-            });
 
+        Intent intentResult = this.getIntent();
+        String result = intentResult.getStringExtra("Achievement1");
+        boolean botanics = result.contains("Botanical Garden");
+        boolean art = result.contains("Modern Art");
+        boolean castle = result.contains("Castle");
+        if(botanics) {
+            achievementBotanical.setBackgroundResource(R.drawable.achievement_visited_botanical_garden);
+        }
+        if(art)
+        {
+            achievementArt.setBackgroundResource(R.drawable.achievement_startedarttour);
+        }
+        if(castle)
+        {
+            achievementCastle.setBackgroundResource(R.drawable.achievement_visited_castle);
+        }
 
 
 
