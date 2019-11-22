@@ -34,6 +34,7 @@ public class HomeScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = (new Intent(HomeScreen.this, UserProfile.class));
+                intent.putExtra("Achievement1","NoAchievement");
                 startActivity(intent);
             }
         });
@@ -52,7 +53,7 @@ public class HomeScreen extends AppCompatActivity {
         CheckIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = (new Intent(HomeScreen.this, CheckIn.class));
+                Intent intent = (new Intent(HomeScreen.this, CheckIn_inTesting.class));
                 startActivity(intent);
             }
         });

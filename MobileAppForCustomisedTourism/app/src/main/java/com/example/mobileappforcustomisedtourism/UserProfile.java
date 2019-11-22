@@ -1,3 +1,10 @@
+/**
+ * Created by Adrianna Kaminska - 40213297
+ * The prototype of mobile application for customised tourism (honors project 2019)
+ * Edinburgh Napier University
+ * UserProfile
+ */
+
 package com.example.mobileappforcustomisedtourism;
 
 import androidx.annotation.NonNull;
@@ -69,6 +76,7 @@ public class UserProfile extends AppCompatActivity {
         boolean botanics = result.contains("Botanical Garden");
         boolean art = result.contains("Modern Art");
         boolean castle = result.contains("Castle");
+        boolean noAchievement = result.contains("NoAchievement");
         if(botanics) {
             achievementBotanical.setBackgroundResource(R.drawable.achievement_visited_botanical_garden);
         }
@@ -81,7 +89,12 @@ public class UserProfile extends AppCompatActivity {
             achievementCastle.setBackgroundResource(R.drawable.achievement_visited_castle);
         }
 
-
+        if(noAchievement)
+        {
+            achievementArt.setBackgroundResource(R.drawable.empty_achievement);
+            achievementBotanical.setBackgroundResource(R.drawable.empty_achievement);
+            achievementCastle.setBackgroundResource(R.drawable.empty_achievement);
+        }
 
 
 

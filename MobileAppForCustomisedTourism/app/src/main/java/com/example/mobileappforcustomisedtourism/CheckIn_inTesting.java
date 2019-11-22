@@ -1,3 +1,11 @@
+/**
+ * Created by Adrianna Kaminska - 40213297
+ * The prototype of mobile application for customised tourism (honors project 2019)
+ * Edinburgh Napier University
+ * CheckIn_inTesting
+ */
+
+
 package com.example.mobileappforcustomisedtourism;
 
 import androidx.appcompat.app.AlertDialog;
@@ -99,6 +107,20 @@ public class CheckIn_inTesting extends AppCompatActivity {
                 {
                     Intent intent1 = (new Intent(CheckIn_inTesting.this, UserProfile.class));
                     intent1.putExtra("Achievement1","Botanical Garden");
+                    startActivity(intent1);
+                    finish();
+                }
+                if(spinner.getSelectedItem() =="The Gallery of Modern Art")
+                {
+                    Intent intent1 = (new Intent(CheckIn_inTesting.this, UserProfile.class));
+                    intent1.putExtra("Achievement1","The Gallery of Modern Art");
+                    startActivity(intent1);
+                    finish();
+                }
+                if(spinner.getSelectedItem() =="The Edinburgh Castle")
+                {
+                    Intent intent1 = (new Intent(CheckIn_inTesting.this, UserProfile.class));
+                    intent1.putExtra("Achievement1","The Edinburgh Castle");
                     startActivity(intent1);
                     finish();
                 }

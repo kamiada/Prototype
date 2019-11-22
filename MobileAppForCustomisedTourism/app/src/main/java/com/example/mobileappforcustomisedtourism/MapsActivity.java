@@ -1,3 +1,10 @@
+/**
+ * Created by Adrianna Kaminska - 40213297
+ * The prototype of mobile application for customised tourism (honors project 2019)
+ * Edinburgh Napier University
+ * MapsActivity
+ */
+
 package com.example.mobileappforcustomisedtourism;
 
 import androidx.fragment.app.FragmentActivity;
